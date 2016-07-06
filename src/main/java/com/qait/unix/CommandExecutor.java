@@ -57,14 +57,5 @@ public class CommandExecutor {
 		}
 		return null;
 	}
-	
-	public static void main(String args[]){
-		String[] commands = {"git","log"}; 
-		CommandExecutor cm = new CommandExecutor();
-		String output = cm.execCommand(commands,"test/");
-		String line[] = output.split("\n");
-		String word[]=line[0].split(" ");
-		System.out.println(word[1]);
-	}
-	
+
 }
